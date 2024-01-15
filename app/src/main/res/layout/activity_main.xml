@@ -11,23 +11,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnContador"
+        app:layout_constraintBottom_toTopOf="@id/cv"
         android:textSize="46sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contador">
     </TextView>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnContador"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvContador"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="+-1"
-        android:background="@drawable/background_button_round"
-        app:layout_constraintBottom_toBottomOf="parent">
-    </androidx.appcompat.widget.AppCompatButton>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="16dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+-1"
+            android:textColor="@color/white"
+            android:background="@drawable/background_button_round">
+        </androidx.appcompat.widget.AppCompatButton>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
